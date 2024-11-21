@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.booking-app {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.sessions, .seats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.session, .seat {
+    width: 20%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.session.archived, .seat.booked {
+    background-color: #f44336;
+    color: white;
+    cursor: not-allowed;
+}
+
+.seat.available {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.date-selector, .session-selector, .seat-selector {
+    margin-top: 20px;
+}
